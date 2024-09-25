@@ -1,0 +1,399 @@
+:root {
+    --text-color: #1A1A1A;
+    --green-color: #00B172;
+    --white-color: #FFF;
+}
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+nav{
+    height: 30px;
+    max-height: 50px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 100%;
+    width: auto;
+}
+
+.option-menu{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.option-menu a{
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Landing Section */
+.landing{
+    width: 100%;
+    height: 50vw;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background: url(../images/landing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+}
+
+.landing-title{
+    margin-bottom: 4vw;
+    font-size: 8vw;
+}
+
+.landing-content{
+    width: 70vw;
+    font-size: 3vw;
+    text-align: center;
+}
+
+/* Features Section */
+.features{
+    padding: 10px;
+}
+
+.features-title{
+    margin: 2vw 0vw 4vw;
+    display: flex;
+    justify-content: center;
+    font-family: "Varela Round", sans-serif;
+}
+
+.features-title a{
+    font-size: 38px;
+    font-weight: bolder;
+    border-bottom: thick solid var(--green-color);
+}
+
+.features-box{
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.features-cell{
+    max-width: 23vw;
+    margin: 4vw 1vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-cell-icon{
+    height: 8vw;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.features-cell-title{
+    font-size: 30px;/*--*/
+    margin-bottom: 1.8vw;/*--*/
+    font-weight: bolder;
+    color: var(--green-color);
+}
+
+.features-cell-text{
+    text-align: center;
+    font-size: 23px;
+}
+
+/* Description Section */
+.description{
+    margin: 4vw;
+    padding: 2vw;
+    color: var(--white-color);
+    background-color: var(--green-color);
+}
+
+.description-title{
+    font-size: 35px;
+    font-family: "Varela Round", sans-serif;
+    border-bottom: thick solid;
+}
+
+.description-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-cell{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.cell-1{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.description-cell-feature{
+    width: 31vw;
+    margin-bottom: 0px;
+}
+
+.description-cell-title {
+    margin-bottom: 1.1vh;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.description-cell-content {
+    font-size: 2.3vw;
+}
+
+.white-logo{
+    max-width: 11vw;
+    height: auto;
+}
+
+.kanye{
+    max-width: 30vw;
+    height: auto;
+}
+
+/*---------------MEDIA QUERIES---------------*/
+
+@media (max-width: 768px) and (min-width: 321px) {
+    
+    .option-link{
+        font-size: 2.6vw;
+    }
+    
+    .landing-title {
+        font-size: 9vw;
+    }
+
+    .landing-content {
+        font-size: 3vw;
+        width: 70vw;
+    }
+
+    .features-title a{
+        font-size: 25px;
+    }
+
+    .features-box {
+        flex-direction: column;
+        padding: 0px 2.5vw;
+    }
+
+    .features-cell{
+        max-width: 48vw;
+    }
+
+    .features-cell-icon{
+        height: 70px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+    
+    .features-cell-title{
+        font-size: 24px;
+        margin-bottom: 7px;
+        font-weight: bolder;
+        color: var(--green-color);
+    }
+    
+    .features-cell-text{
+        font-size: 17px;
+    }
+
+    .description{
+        margin: 2vw;
+        padding:4vw;
+    }
+
+    .description-box{
+        flex-direction: column;
+    }
+
+    .description-cell-feature {
+        width: 45vw;
+        margin-top: 36px;
+    }
+
+    .cell-1{
+        align-items: center;
+    }
+
+    .description-cell-title{
+        margin-bottom: 8px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .description-cell-content{
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .kanye {
+        max-width: 65vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 462px) {
+    .option-menu {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Position below the navbar */
+        right: 10px;
+        background-color: var(--white-color);
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .option-menu a {
+        padding: 10px;
+        font-size: 18px;
+        margin: 0; /* Remove margin between links */
+        text-align: center;
+        display: block;
+        border-bottom: 1px solid #ccc; /* Optional: for better visibility */
+    }
+
+    .menu-btn {
+        display: block; /* Show the button */
+    }
+
+    /* When menu is active */
+    .option-menu.active {
+        display: flex; /* Show the menu when the button is clicked */
+    }
+}
+
+@media (max-width: 320px) {
+    .nav {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .option-link {
+        font-size: 10px;
+        margin-left: 4vw;
+    }
+
+    .landing-title {
+        font-size: 18px;
+    }
+
+    .landing-content {
+        font-size: 10px;
+        width: 80vw;
+    }
+
+    .features-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features-title a{
+        font-size: 20px;
+    }
+
+    .features-cell {
+        max-width: 75vw;
+        margin: 4vw;
+    }
+
+    .features-cell-icon{
+        height: 15vw;
+        margin-bottom: 2vw;
+    }
+
+    .features-cell-title {
+        font-size: 6vw;
+        margin-bottom: 2.5vw;
+    }
+
+    .features-cell-text {
+        font-size: 4.5vw;
+        line-height: 1;
+    }
+
+    .description{
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .description-title{
+        font-size: 6.5vw;
+    }
+
+    .description-box {
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 5vw;
+    }
+
+    .description-cell{
+        margin: 5vw;
+    }
+
+    .description-cell-feature{
+        width: 80vw;
+    }
+    
+    .description-cell-title{
+        margin-bottom: 3vw;
+        font-size: 5.5vw;
+        font-weight: bold;
+    }
+    
+    .description-cell-content{
+        font-size: 5vw;
+        line-height: 1.2;
+    }
+
+    .cell-1 {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 300px;
+        padding: 2px;
+        font-size: 4vw;
+        line-height: 1.2;
+    }
+
+    .white-logo{
+        max-width: 16vw;
+        height: auto;
+    }
+
+    .kanye {
+        max-width: 65vw;
+        height: auto;
+    }
+}

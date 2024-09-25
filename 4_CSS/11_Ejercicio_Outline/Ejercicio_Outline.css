@@ -1,0 +1,13 @@
+.box{
+    height: 100px;
+    width: 100px;
+    margin-top: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 4px dotted rgb(0, 219, 0);
+    background-color: red;
+}
+
+.box:hover{
+    outline: 4px dotted;
+}

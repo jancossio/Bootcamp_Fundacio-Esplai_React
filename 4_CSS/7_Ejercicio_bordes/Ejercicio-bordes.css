@@ -1,0 +1,15 @@
+:root{
+
+}
+
+.box{
+    width: 350px;
+    padding: 45px;
+    border-top: dotted greenyellow;
+    border-right: dashed 7px blue;
+    border-bottom: solid red;
+    border-left: double 9px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,70 @@
+:root {
+    --red-bg-color: red;
+    --blue-bg-color: blue;
+    --green-bg-color: rgb(0, 255, 0);
+  }
+
+  .color-combinations{
+    float:left;
+    margin-right: 150px;
+  }
+
+  p{
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+.color-container{
+    display: flex;
+    align-items: center;
+}
+
+.color{
+    height: 100px;
+    width: 100px;
+    margin: 15px;
+    border-radius: 50px;
+    mix-blend-mode: screen;
+}
+
+.red{
+    background-color: var(--red-bg-color);
+}
+
+.blue{
+    background-color: var(--blue-bg-color);
+}
+
+.green{
+    background-color: var(--green-bg-color);
+}
+
+.result{
+    margin: 0px;
+}
+
+.color-diagram{
+    width: 500px;
+    height: 500px;
+    float:left;
+    position: relative;
+}
+
+.red-diagram, .blue-diagram, .green-diagram{
+    position: absolute;
+}
+
+.red-diagram{
+    top: 120px;
+    left: 128px;
+}
+
+.blue-diagram{
+    top: 185px;
+    left: 165px;
+}
+
+.green-diagram{
+    top: 120px;
+    left: 199px;
+}

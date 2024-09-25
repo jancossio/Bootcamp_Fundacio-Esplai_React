@@ -1,0 +1,84 @@
+/*1
+*{
+    background-color: red;
+}
+
+/*2
+p{
+    background-color: cyan;
+}
+
+/*3
+#title-1{
+    background-color: yellowgreen;
+}
+
+/*4
+.bg-yellow{
+    background-color: yellow;
+}*/
+
+/*5
+*[id]{
+    background-color: blueviolet;
+}
+
+/*6
+*[id="title-1"]{
+    background-color: red;
+}
+
+/*7
+*[href="https://www.yahoo.com/"]{
+    background-color: orange;
+}
+
+/*8
+*[class^="title"]{
+    background-color: blueviolet;
+}
+
+/*9
+*[href$=".com"]{
+    background-color: yellow;
+}
+
+/*10
+*[class*="title"]{
+    background-color: orangered;
+}
+
+/*11
+*[href*="127"]{
+    background-color: lightpink;
+}
+
+/*12
+*[href^="http"]{
+    background-color: lightblue;
+}
+
+/*13
+a, p, h1{
+    background-color: brown;
+}
+
+/*14
+main p{
+    background-color: turquoise;
+}
+
+/*15
+h1 + p{
+    background-color: turquoise;
+}
+
+/*16
+h1 ~ *{
+    background-color: fuchsia;
+}
+
+/*17
+main > *{
+    background-color: tomato;
+}

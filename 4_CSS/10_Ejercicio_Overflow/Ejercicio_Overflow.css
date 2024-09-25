@@ -1,0 +1,13 @@
+body{
+    margin: 0px;
+    margin-right: 100px;
+}
+
+div{
+    height: 300px;
+    padding-top: 18px;
+    padding-left: 12px;
+    /*overflow: hidden;*//*En este caso la barra de scroll*/
+    overflow: auto;
+    background-color: greenyellow;
+}

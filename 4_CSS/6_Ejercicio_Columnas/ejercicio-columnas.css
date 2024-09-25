@@ -1,0 +1,22 @@
+body{
+    background-color: bisque;
+}
+
+h1{
+    color:red;
+}
+
+h1:hover{
+    color:blue;
+}
+
+.content{
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: solid 2px red;
+}
+
+.content::selection{
+    background-color: blueviolet;
+    color: white;
+}

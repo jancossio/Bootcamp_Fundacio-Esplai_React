@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/3-column-preview-card-component-main/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <style>
+      :root {
+        --orange-color: hsl(31, 77%, 52%);
+        --cyan-color: hsl(184, 100%, 22%);
+        --dark_cyan-color: hsl(179, 100%, 13%);
+        --transp_white-color: hsla(0, 0%, 100%, 0.75);
+        --light_gray-color: hsl(0, 0%, 95%);
+      }
+
+      body {
+        margin: 0;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #grid-container {
+        max-width: 900px;
+        margin: 7vw; 
+      }
+
+      .sedans {
+        border-radius: 20px 20px 0px 0px;
+        background-color: var(--orange-color);
+      }
+
+      .suvs {
+        background-color: var(--cyan-color);
+      }
+
+      .luxury {
+        border-radius: 0px 0px 20px 20px;
+        background-color: var(--dark_cyan-color);
+      }
+
+      .cell-grid {
+        max-width: 555px;
+        padding: 6vw;
+        color: var(--light_gray-color);
+      }
+
+      .cell-grid .cell-body {
+        margin-bottom: 85px;
+      }
+
+      .cell-grid h1 {
+        font-weight: 700;
+        font-family: "Big Shoulders Display", sans-serif;
+      }
+
+      .cell-grid p {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: "Lexend Deca", sans-serif;
+      }
+
+      .cell-grid button {
+        padding: 13px 28px;
+        color: var(--light_gray-color);
+        font-weight: 700;
+        border: solid 2px;
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      .sedans button:hover {
+        color: var(--orange-color);
+        background-color: var(--light_gray-color);
+      }
+
+      .suvs button:hover {
+        color: var(--cyan-color);
+        background-color: var(--light_gray-color);
+      }
+
+      .luxury button:hover {
+        color: var(--dark_cyan-color);
+        background-color: var(--light_gray-color);
+      }
+
+      @media (width > 1023px) {
+        #grid-container {
+          max-width: 900px;
+          margin-left: auto;
+          margin-right: auto;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .sedans {
+          border-radius: 20px 0px 0px 20px;
+        }
+
+        .luxury {
+          border-radius: 0px 20px 20px 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="grid-container">
+        <div class="cell-grid sedans">
+          <div class="cell-body">
+            <img
+              src="./3-column-preview-card-component-main/images/icon-sedans.svg"
+            />
+            <h1>SEDANS</h1>
+            <p>
+              Choose a sedan for its affordability and excellent fuel economy.
+              Ideal for cruising in the city or on your next road trip.
+            </p>
+          </div>
+          <button>Learn More</button>
+        </div>
+        <div class="cell-grid suvs">
+          <div class="cell-body">
+            <img
+              src="./3-column-preview-card-component-main/images/icon-suvs.svg"
+            />
+            <h1>SUVS</h1>
+            <p>
+              Take an SUV for its spacious interior, power, and versatility.
+              Perfect for your next family vacation and off-road adventures.
+            </p>
+          </div>
+          <button>Learn More</button>
+        </div>
+        <div class="cell-grid luxury">
+          <div class="cell-body">
+            <img
+              src="./3-column-preview-card-component-main/images/icon-luxury.svg"
+            />
+            <h1>LUXURY</h1>
+            <p>
+              Cruise in the best car brands without the bloated prices. Enjoy
+              the enhanced comfort of a luxury rental and arrive in style.
+            </p>
+          </div>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>

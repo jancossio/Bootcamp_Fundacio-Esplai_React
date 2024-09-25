@@ -1,0 +1,101 @@
+.odd {
+    background-color: red;
+}
+
+.even {
+    background-color: white;
+}
+
+.circle, .frame{
+    border-radius: 100%;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto
+}
+
+.frame {
+    position: relative;
+    height: 310px;
+    width: 310px;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.ring1 {
+    height: 280px;
+    width: 280px;
+    border: solid 2px rgb(184, 184, 184);
+}
+
+.ring2 {
+    height: 270px;
+    width: 270px;
+}
+
+.ring3 {
+    height: 250px;
+    width: 250px;
+}
+
+.ring4 {
+    height: 220px;
+    width: 220px;
+}
+
+.ring5 {
+    height: 190px;
+    width: 190px;
+}
+
+.ring6 {
+    height: 160px;
+    width: 160px;
+}
+
+.ring7 {
+    height: 130px;
+    width: 130px;
+}
+
+.ring8 {
+    height: 100px;
+    width: 100px;
+}
+
+.ring9 {
+    height: 70px;
+    width: 70px;
+}
+
+.ring10 {
+    height: 40px;
+    width: 40px;
+}
+
+.crosshair {
+    position: absolute;
+    background-color: black;
+}
+
+.horizontal {
+    top: 49.8%;
+    left: 4.8%;
+    width: 280px;
+    height: 2px;
+}
+
+.vertical {
+    top: 4.8%;
+    left: 49.8%;
+    width: 2px;
+    height: 280px;
+}
