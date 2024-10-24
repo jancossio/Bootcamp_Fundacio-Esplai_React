@@ -1,0 +1,88 @@
+//import bootstrap
+//@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+.slate-grey{
+    background-color: slategray;
+}
+
+.text-grey{
+    color: rgb(196, 196, 196);
+}
+
+.purple-card{
+    position:relative;
+    background-color: blueviolet;
+    z-index: 1;
+
+    .background-quotation{
+        position: absolute;
+        top: 0px;
+        right: 4vw;
+        z-index: -1;
+    }
+}
+
+.card{
+    height: 100%;
+    font-family: 'Barlow Semi Condensed';
+}
+
+.card-top{
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-pic{
+    height: 35px;
+    width: 35px;
+    border-radius: 18px;
+}
+
+.status{
+    font-size: 13px;
+}
+
+.title{
+    font-size: 23px;
+    margin-bottom: 18px;
+    font-weight: 600;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 22px;
+    }
+    
+    @include media-breakpoint-up(md) {
+        font-size: 20.5px;
+    }
+    
+    @include media-breakpoint-up(lg) {
+    font-size: 22px;
+    }
+    
+    @include media-breakpoint-up(xl) {
+    font-size: 28px;
+    }
+}
+
+.content{
+    margin-bottom: 0px;
+    font-size: 15px;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 14px;
+    }
+    
+    @include media-breakpoint-up(md) {
+        font-size: 12.8px;
+    }
+    
+    @include media-breakpoint-up(lg) {
+    font-size: 17.5px;
+    }
+    
+    @include media-breakpoint-up(xl) {
+    font-size: 19px;
+    }
+}

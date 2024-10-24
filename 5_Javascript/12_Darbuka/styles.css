@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Arabian Onenightstand';
+    src: url(./assets/fonts/XXII\ ARABIAN-ONENIGHTSTAND.ttf);
+}
+
+body{
+    height: 100vh;
+    margin:0;
+    background-image: url("./assets/images/1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: yellow;
+    font-family: 'Arabian Onenightstand';
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1{
+    margin: 15px 0px 0px;
+}
+
+.downer-title{
+    font-size: 60px;
+}
+
+.sound-clickable{
+    width: 150px;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    border: solid 2px yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sound-clickable h1{
+    margin-top: 0px;
+}
+
+.sound-clickable p, .sound-clickable h1{
+    margin-bottom: 0px;
+}
+
+.a-frame{
+    background-image: url("./assets/images/1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.w-frame{
+    background-image: url("./assets/images/2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.d-frame{
+    background-image: url("./assets/images/3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.s-frame{
+    background-image: url("./assets/images/4.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.e-frame{
+    background-image: url("./assets/images/5.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,96 @@
+$grid-breakpoints: (
+  md: 728px,
+  lg: 1071px,
+);
+
+:root{
+    --company-color: #43b1a9;
+    --grey-letters: #b3b3b3;
+    --login-color: black;
+}
+
+//import bootstrap
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+.navigation{
+    height: 75px;
+    box-shadow: 0 10px 15px -3px  rgba(0,0,0,0.1), 
+    0 4px 6px -2px  rgba(0,0,0,0.05);
+}
+
+.container-width{
+    max-width: 1024px;
+}
+
+.logo{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.bnb-color{
+    color: var(--company-color);
+}
+
+.form-control{
+    height: 42px;
+    max-width: 420px;
+}
+
+.login{
+    padding: 7px 60px;
+    font-weight: 500;
+    color: white;
+    background-color: var(--login-color);;
+}
+
+.grey-letters{
+    color: var(--grey-letters);
+}
+
+.nav-page-menu{
+    //width: 83%;
+}
+
+.page-image{
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.card{
+    border: none;
+    background-color: rgb(247, 249, 255);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+
+.translucid{
+    background-color: rgba(0,0,0,0.21);
+}
+
+.translucid:hover{
+    background-color: rgba(0,0,0,0.31);
+}
+
+
+.star {
+    top: 10px;
+    left: 10px;
+    font-weight: 500;
+}
+
+.heart {
+    top: 10px;
+    right: 10px;
+}
+
+.room{
+    display: inline-block;
+    margin-right: 5px;
+    color:lightgray;
+}
+
+.price{
+    font-size: 1.5rem;
+    font-weight: 500;
+}

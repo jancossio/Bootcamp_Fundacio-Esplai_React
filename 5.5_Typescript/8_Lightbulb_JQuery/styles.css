@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.flex{
+    display: flex;
+}
+
+h2, h4{
+    background-color: red;
+}
+
+header{
+    justify-content: center;
+}
+
+main{
+    justify-content: space-between;
+}
+
+#lightbulb-container{
+    position: relative;
+    margin: 0 0px;
+    width: 500px;
+    height: 700px;
+}
+
+#lightbulb-on, #lightbulb-off{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#lightbulb-on {
+    visibility: hidden;
+    opacity: 1;
+}
+
+#input-container{
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+}

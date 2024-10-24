@@ -1,0 +1,109 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    position:relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+h1{
+    /* margin: 100px;; */
+}
+
+.section{
+    padding: 1%;
+    height: 50vh;
+}
+
+.eat{
+    color: green;
+    background-color: lightgreen;
+}
+
+.play{
+    color: gold;
+    background-color: lightgoldenrodyellow;
+}
+
+.fight{
+    color: maroon;
+    background-color: lightcoral;
+}
+
+.sleep{
+    color: blue;
+    background-color: lightskyblue;
+}
+
+/*EAT CONTENT*/
+button{
+    padding: 10px;
+    border-radius: 44px;
+}
+
+button img{
+    height: 32px;
+    width: 32px;
+}
+
+.eat-btn{
+    margin-right: 6vw;
+}
+
+.container-bar{
+    position: relative;
+    margin: 2px;
+    height: 22px;
+    padding: 4px;
+    border-radius: 16px;
+    background-color: black;
+}
+
+.progress-bar{
+    position: absolute;
+    height: 22px;
+    border-radius: 12px;
+    background-color: red;
+    transition: width 0.5s;
+    max-width: 99%;
+}
+
+/*PLAY CONTENT*/
+.play-btn{
+    margin-right: 0px;
+    margin-left: 6vw;
+}
+
+/*FIGHT CONTENT*/
+.fight-btn{
+    margin-right: 6vw;
+}
+
+/*Pet CONTENT*/
+.pet{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pet h1{
+    text-align: center;
+}
+
+#fluffy-img{
+    width: 250px;
+    height: 250px;
+}
+
+@keyframes progress-1-animation{
+    0% {width: 0%;}
+    100% {width: 100%}
+}

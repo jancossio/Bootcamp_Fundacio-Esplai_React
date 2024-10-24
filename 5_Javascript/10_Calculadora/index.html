@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <section id="calc-top">
+            <article class="white top-left">calc</article>
+            <article class="white top-right">
+                <span>THEME</span>
+                <div>
+                    <div class="slider-gears"><a>1</a> <a>2</a> <a>3</a></div>
+                    <input type="range" min="0" max="2" value="0" class="slider" id="theme-selector">
+                </div>
+            </article>
+        </section>
+        <section id="screen" class="white">0</section>
+        <section id="keyboard">
+            <button type="button" class="white-btn numbers">7</button>
+            <button type="button" class="white-btn numbers">8</button>
+            <button type="button" class="white-btn numbers">9</button>
+            <button type="button" class="white blue-btn delete">DEL</button>
+            <button type="button" class="white-btn numbers">4</button>
+            <button type="button" class="white-btn numbers">5</button>
+            <button type="button" class="white-btn numbers">6</button>
+            <button type="button" class="white-btn operations">+</button>
+            <button type="button" class="white-btn numbers">1</button>
+            <button type="button" class="white-btn numbers">2</button>
+            <button type="button" class="white-btn numbers">3</button>
+            <button type="button" class="white-btn operations">-</button>
+            <button type="button" class="white-btn numbers">.</button>
+            <button type="button" class="white-btn numbers">0</button>
+            <button type="button" class="white-btn operations">/</button>
+            <button type="button" class="white-btn operations">X</button>
+            <button type="button" class="grid-ending white blue-btn reset">RESET</button>
+            <button type="button" class="grid-ending white red-btn equal">=</button>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

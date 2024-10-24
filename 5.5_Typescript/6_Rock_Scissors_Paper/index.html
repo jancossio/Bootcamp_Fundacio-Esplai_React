@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Scissors Paper</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main class="flex">
+        <h1>Piedra🪨, Papel📃, Tijera✂️</h1>
+        <article class="flex counter">
+            <section class="score">
+                <h2>Player: <a id="playerScore">0</a></h2>
+            </section>
+            <section class="score">
+                <h2>CPU: <a id="cpuScore">0</a></h2>
+            </section>
+        </article>
+        <article class="rounds">
+            <h3>Round: <a id="round-count">0</a></h3>
+        </article>
+        <article class="flex option-pannel">
+            <h2>Movimientos</h2>
+            <p id="round-result">🚩 ¡¡Que comience el juego!! 🚩</p>
+            <div id="button-container">
+                <button class="move-button rockBtn">🪨</button>
+                <button class="move-button paperBtn">📃</button>
+                <button class="move-button scissorsBtn">✂️</button>
+            </div>
+            <div id="game-over">
+                <h2>GAME OVER!!</h2>
+                <h3 id="final-result"></h3>
+            </div>
+        </article>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

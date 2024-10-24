@@ -1,0 +1,26 @@
+article{
+    position: relative;
+    max-width: 375px;
+    margin-top: 25px;
+    padding: 20px 10px;
+    border: solid 2px lightgray;
+}
+
+h4{
+    margin: 2px;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+.title{
+    position: absolute;
+    top: -13px;
+    background-color: white;
+}
+
+#array-container{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+

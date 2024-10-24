@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbulb and Switch</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="flex">
+        <img id="switch" onclick="turnLight()" src="./assets/boff.jpg">
+    </header>
+    <main class="flex">
+        <div id="lightbulb-container">
+            <img id="lightbulb-off" src="./assets/off.jpg">
+            <img id="lightbulb-on" onclick="turnLight()" src="./assets/on.jpg">
+        </div>
+        <div class="flex" id="input-container">
+            <h2>Control Panel</h2>
+            <h4>Bright Intensity</h4>
+            <input type="range" min="0" max="8" value="4" class="slider" id="bright-intensity">
+            <h4>Rotation</h4>
+            <input type="range" min="0" max="359" value="180" class="slider" id="rotation">
+            <h4>Scale</h4>
+            <input type="range" min="-20" max="20" value="20" class="slider" id="scale">
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
